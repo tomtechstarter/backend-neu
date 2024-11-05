@@ -9,7 +9,8 @@ const PORT = 5050;
 
 const todos = [
   { id: 1, name: "Milch holen", userId: 1 },
-  { id: 2, name: "Brötchen holen", userId: 1 },
+  { id: 2, name: "Wasser holen", userId: 2 },
+  { id: 3, name: "Brötchen holen", userId: 1 },
 ];
 
 app.get("/", function (req, res) {
@@ -28,6 +29,15 @@ app.get("/todos/byid", (req, res) => {
   const todoIdNr = parseInt(todoId);
   const todo = todos.find((item) => item.id === todoIdNr);
   res.json(todo);
+});
+
+app.get("/todos/byuserid", (req, res) => {
+  const userId = req.query.userId;
+
+  if (!userId) res.send("No User Id provided");
+  const userIdNr = parseInt(userId);
+  const userTodos = todos.filter((item) => item.userId === userIdNr);
+  res.json(userTodos);
 });
 
 app.listen(PORT, () => {
