@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Milch holen",
+    "userId": 1
+  },
+  {
+    "id": 3,
+    "name": "Brötchen holen",
+    "userId": 1
+  },
+  {
+    "id": 4,
+    "name": "Auto waschen",
+    "userId": 3
+  },
+  {
+    "id": 5,
+    "name": "Einkaufsliste schreiben",
+    "userId": 1
+  },
+  {
+    "id": 6,
+    "name": "Rechnung bezahlen",
+    "userId": 2
+  },
+  {
+    "id": 7,
+    "name": "Buch zurückgeben",
+    "userId": 3
+  },
+  {
+    "id": 8,
+    "name": "Rasen mähen",
+    "userId": 1
+  },
+  {
+    "id": 9,
+    "name": "Termin beim Zahnarzt machen",
+    "userId": 2
+  },
+  {
+    "id": 10,
+    "name": "Blumen gießen",
+    "userId": 1
+  }
+]
