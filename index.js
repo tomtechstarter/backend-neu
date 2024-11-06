@@ -151,5 +151,5 @@ app.put("/todos/:id", (req, res) => {
 
 // Startet den Server und lauscht auf dem angegebenen Port
 app.listen(PORT, () => {
-  console.log(`Express App is running on http://localhost:${PORT}`);
-});
+  console.log(`Express App is running on http://localhost:${PORT}`) // Loggt, dass alles erfolgreich läuft
+})
