@@ -22,7 +22,6 @@ app.get("/todos/all", (req, res) => {
 });
 
 app.get("/todos/byid", (req, res) => {
-  // const query = req.query --> {"todoId": 1}
   const todoId = req.query.todoId;
   console.log("MY TODOID", typeof todoId);
   if (!todoId) res.send("No Todo Id provided");
